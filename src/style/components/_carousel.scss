@@ -1,0 +1,17 @@
+.carousel-inner > .item > {
+  a > img, img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1;
+    min-height: 240px;
+  }
+}
+.carousel-indicators li {
+  border: 1px solid $color-text;
+  background-color: $color-text;
+}
+.carousel-indicators .active {
+  background-color: transparent;
+  border: 1px solid $color-stack;
+}

@@ -1,0 +1,84 @@
+.btn, .btn:visited{
+  padding: 12px 40px;
+  border-radius: 3px;
+  border: 2px solid $color-base;
+  box-sizing: border-box;
+  background-color: rgba(22, 232, 190, 0);
+  font-family: "Lato Bold",sans-serif;
+  color: $color-base;
+  font-weight: 900;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  @extend .btn-style;
+
+  &:hover, &:focus{
+    background: transparent;
+    color: $color-stack;
+    border: 2px solid $color-stack;
+  }
+
+  &:active {
+    border: 2px solid darken($color-stack,15%);
+  }
+}
+.btn_item, .btn_item:visited {
+  padding: 10px 30px;
+  border-radius: 2px;
+  border: 1px solid $color-latest;
+  box-sizing: border-box;
+  background-color: rgba(22, 232, 190, 0);
+  font-family: "Lato Bold",sans-serif;
+  color: $color-latest;
+  font-weight: 900;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  @extend .btn-style;
+
+  &:hover, &:focus{
+    background: $color-latest;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: darken($color-latest,15%);
+  }
+}
+.btn_submit{
+  padding: 12px 64px;
+  background: $color-base;
+  color: $color-dark;
+  font-family: "OpenSansBold", sans-serif;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 3px;
+  @extend .btn-style;
+
+  &:hover, &:focus{
+    background: $color-base;
+    color: lighten($color-dark,30%);
+    text-decoration: none;
+  }
+}
+.btn_size{
+  padding: 10px 24px;
+  border-radius: 1px;
+  border: 1px solid $color-latest;
+  box-sizing: border-box;
+  background-color: rgba(22, 232, 190, 0);
+  font-family: "OpenSansBold",sans-serif;
+  color: $color-latest;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover, &:focus{
+    background: $color-latest;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: darken($color-latest,15%);
+  }
+}

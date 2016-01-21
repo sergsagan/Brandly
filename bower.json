@@ -1,0 +1,19 @@
+{
+  "name": "brandly",
+  "version": "1.1.0",
+  "authors": [
+    "zorro76 <sergey.martynuk@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

@@ -1,0 +1,83 @@
+.font-style{
+  font-weight: 400;
+  line-height: 19px;
+}
+.border {
+  background-color: $color-stack;
+  width: 110px;
+  height: 3px;
+}
+.border-item{
+  width: 160px;
+  height:1px;
+  background-color: $color-base;
+
+}
+.heading{
+  font-family: "OpenSansLightItalic", sans-serif;
+  color: $color-latest;
+  opacity: 0.6;
+  font-size: $fs-latest;
+  font-style: italic;
+  line-height: 19px;
+  text-align: center;
+  transform: scaleY(1.0007);
+  margin: 25px 0;
+}
+.collections{
+  font-family: "OpenSansLightItalic", sans-serif;
+  color: $color-base;
+  font-size: $fs-latest;
+  font-style: italic;
+  line-height: 19px;
+  text-align: center;
+}
+.collections2{
+  font-family: "LatoBlack", sans-serif;
+  color: $color-base;
+  font-size: $fs-logo;
+  line-height: 45px;
+  text-align: center;
+  font-weight: 900;
+  transition: 1.5s all;
+}
+
+.frame{
+  border: 3px solid $color-base;
+}
+.size{
+  font-family: "Open Sans Bold", sans-serif;
+  color: $color-latest;
+  font-size: $fs-btn;
+  font-weight: 700;
+  text-align: center;
+}
+.menu{
+  font-family: "OpenSans", sans-serif;
+  color: $color-base;
+  font-size: $fs-menu;
+  @extend .font-style
+}
+.btn-style{
+  font-size: $fs-menu;
+  line-height: 19px;
+  outline: none !important;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+.stack_heading{
+  font-family: "LatoBold",sans-serif;
+  color: $color-stack;
+  font-size: $fs-logo-span;
+  font-weight: 700;
+}
+
+.descr{
+  color: $color-text;
+  font-size: $fs-descr;
+  font-weight: 400;
+  line-height: 25px;
+}

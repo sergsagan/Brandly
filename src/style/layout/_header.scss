@@ -1,0 +1,110 @@
+.header{
+  width:100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+
+  nav {
+    position: fixed;
+  }
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+
+    .navbar-brand {
+      font-family: "BebasNeueRegular", sans-serif;
+      color: $color-stack;
+      font-size: $fs-logo;
+      padding-top: 20px;
+      @extend .font-style;
+
+      &:hover{
+        color: $color-stack;
+      }
+
+      span {
+        font-family: "BebasNeueBook", sans-serif;
+        color: $color-stack;
+        font-size: $fs-logo-span;
+        @extend .font-style
+      }
+    }
+    .navbar-toggle {
+      border-color: $color-stack;
+    }
+    .nav{
+
+      li{
+        margin-right: 20px;
+
+        a{
+          -webkit-transition: 0.75s;
+          transition: 0.75s;
+          @extend .menu;
+
+          &:hover{
+            color: $color-stack;
+          }
+        }
+
+      }
+
+    }
+
+  }
+  .sticky .navbar-default{
+    background-color: #ffffff;
+    opacity: 0.95;
+    filter: alpha(Opacity=95);
+    z-index: 1000;
+    height: auto;
+  }
+
+  .header-content{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height:100%;
+
+    .header-content-inner{
+      text-align: center;
+      margin-top: 229px;
+
+      h1{
+        font-family: "LatoBold", sans-serif;
+        color: $color-base;
+        font-size: $fs-h1;
+        font-weight: 900;
+        line-height: 19px;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .description-top{
+        font-family: "OpenSansLight", sans-serif;
+        color: $color-base;
+        opacity: 1;
+        font-size: $fs-logo-span;
+        font-weight: 300;
+        line-height: 19px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+      .description{
+        font-family: "OpenSansLight", sans-serif;
+        color: $color-base;
+        opacity: 1;
+        font-size: $fs-logo-span;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        padding-bottom: 20px;
+      }
+
+    }
+
+  }
+
+}

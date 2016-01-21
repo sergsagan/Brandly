@@ -1,0 +1,26 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/helpers';
+@import 'utils/fonts';
+
+@import 'base/normalize';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/media';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+
+
+

@@ -1,0 +1,248 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+.content{
+
+  .paddings{
+    padding-right:0;
+    padding-left:0;
+  }
+
+  .products{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: $color-base;
+
+    h2.heading{
+      @extend .heading;
+    }
+    .line{
+      margin: 0 auto;
+      @extend .border;
+    }
+    .collections_item{
+      margin-top: 50px;
+
+      .collections_item_men, .collections_item_woman, .collections_item_watches{
+        margin-bottom: 25px;
+
+        .owerlay{
+          background-color: $color-product-owerlay;
+          opacity: .6;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          transition: 1.5s all;
+          @extend .frame;
+
+          &:hover{
+            background-color: transparent;
+            transition: 1.5s all;
+          }
+
+          .border-box{
+            max-width: 310px;
+            width: 90%;
+            height: 90%;
+            margin: 20px auto;
+            border:2px solid $color-base;
+            transition: 1.5s all;
+
+            &:hover{
+              border:2px solid transparent;
+              transition: 1.5s all;
+            }
+
+            h4.item{
+              margin-top: 170px;
+              cursor: pointer;
+              @extend .collections;
+
+            }
+
+          }
+
+        }
+
+      }
+      .collections_item_new, .collections_item_sale{
+
+        .owerlay {
+          background-color: $color-product-owerlay;
+          opacity: .6;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          z-index: 50;
+          transition: 1.5s all;
+          @extend .frame;
+
+          &:hover {
+            background-color: transparent;
+            transition: 1.5s all;
+          }
+          .line_item_top{
+            margin: auto 0;
+            @extend .border-item;
+          }
+          h4.item {
+            margin-top: 130px;
+            cursor: pointer;
+            @extend .collections2;
+
+            &:hover{
+              color: $color-stack;
+              transition: 1.5s all;
+            }
+          }
+          .line_item_bottom{
+            margin:10px auto;
+            @extend .border-item;
+          }
+        }
+
+      }
+      .collections_item_men{
+        background-image: url("../../img/man.jpg");
+        background-repeat: no-repeat;
+        height: 418px;
+        width: 100%;
+        max-width: 370px;
+      }
+
+      .collections_item_woman{
+        background-image: url("../../img/woman.jpg");
+        background-repeat: no-repeat;
+        height: 418px;
+        width: 100%;
+        max-width: 370px;
+      }
+
+      .collections_item_watches{
+        background-image: url("../../img/whatches.jpg");
+        background-repeat: no-repeat;
+        height: 418px;
+        width: 100%;
+        max-width: 370px;
+      }
+      .collections_item_new{
+        background-image: url("../../img/new.jpg");
+        background-repeat: no-repeat;
+        height: 418px;
+        width: 100%;
+        max-width: 570px;
+      }
+      .collections_item_sale{
+        background-image: url("../../img/sale.jpg");
+        background-repeat: no-repeat;
+        height: 418px;
+        width: 100%;
+        max-width: 570px;
+      }
+    }
+
+  }
+
+  .trending{
+    background-image: url("../../img/section_bg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1600px;
+    height: 766px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .line{
+      margin: 0 auto;
+      @extend .border;
+    }
+    .carousel-inner{
+
+      .item{
+
+        .trending_slider_info{
+          margin-top: 20px;
+          position: absolute;
+          z-index: 1000;
+
+          .block_photo{
+            background-image: url("../../img/jacket.jpg");
+            background-repeat: no-repeat;
+            height:476px;
+            width: 100%;
+            max-width: 476px;
+          }
+          .size_select{
+
+            h3{
+              @extend .stack_heading;
+            }
+            p.descr{
+              font-family: "OpenSans", sans-serif;
+              @extend .descr;
+            }
+            .lines{
+              background-color: $color-dark;
+              width: 30px;
+              height: 1px;
+              text-align: left;
+            }
+
+            .text_block{
+              margin-top: 15px;
+
+              h5{
+                font-family:"LatoRegular", sans-serif;
+                text-transform: uppercase;
+                @extend .descr;
+              }
+              p{
+                font-family:"LatoRegular", sans-serif;
+                @extend .descr;
+              }
+
+              .btn_group{
+                margin-top: 65px;
+
+                .size_item{
+                  a{
+                    margin-left: 4px;
+                  }
+                }
+                .buttons{
+                  margin-top: 30px;
+                }
+
+              }
+            }
+
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .blog{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    .line{
+      margin: 0 auto;
+      @extend .border;
+    }
+
+  }
+
+}
