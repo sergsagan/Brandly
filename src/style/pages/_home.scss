@@ -161,7 +161,8 @@ body{
       margin: 0 auto;
       @extend .border;
     }
-    .carousel-inner{
+    .carousel, .carousel-inner{
+      height: 650px;
 
       .item{
 
@@ -233,7 +234,7 @@ body{
   .blog{
     width: 100%;
     max-width: 1600px;
-    height: auto;
+    height: 700px;
     margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -241,6 +242,59 @@ body{
     .line{
       margin: 0 auto;
       @extend .border;
+    }
+
+    .carousel, .carousel-inner {
+      height: 800px;
+
+      .blog_slider{
+        margin-top: 30px;
+
+        .blog_slider_pictures1{
+          background: url("../../img/fashion.jpg");
+          -webkit-background-size: cover;
+          background-size: cover;
+          height:400px;
+        }
+
+        .blog_slider_inform1, .blog_slider_inform2 {
+
+          h3{
+            text-align: left;
+            @extend .stack_heading;
+          }
+          p.post{
+            text-align: left;
+            @extend .post;
+          }
+          .border_line{
+            @extend .border_line;
+          }
+
+          p{
+            font-family: "OpenSansLight", sans-serif;
+            color: $color-latest;
+            opacity: .6;
+            font-size: $fs-descr;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left;
+          }
+          a.btn_item{
+            text-align: left;
+          }
+
+        }
+
+        .blog_slider_pictures2{
+          background: url("../../img/stewarts.jpg");
+          -webkit-background-size: cover;
+          background-size: cover;
+          height:400px;
+        }
+
+      }
+
     }
 
   }

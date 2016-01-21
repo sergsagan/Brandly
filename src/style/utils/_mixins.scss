@@ -81,3 +81,16 @@
   font-weight: 400;
   line-height: 25px;
 }
+.border_line{
+  background-color: $color-hr-blog;
+  width: 570px;
+  height: 1px;
+}
+.post{
+  font-family: "LatoRegular", sans-serif;
+  color: $color-latest;
+  opacity: .6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
