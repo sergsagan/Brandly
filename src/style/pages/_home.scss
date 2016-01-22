@@ -268,6 +268,7 @@ body{
             @extend .post;
           }
           .border_line{
+            margin-bottom: 20px;
             @extend .border_line;
           }
 
@@ -279,8 +280,9 @@ body{
             font-weight: 300;
             line-height: 24px;
             text-align: left;
+            margin:20px 0 20px;
           }
-          a.btn_item{
+          .btn-wrapp{
             text-align: left;
           }
 

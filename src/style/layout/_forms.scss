@@ -1,0 +1,24 @@
+.form{
+
+  input{
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	line-height: 50px;
+	height: 50px;
+	border: 1px solid $color-base;
+	text-indent: 10px;
+	font-size: 17px;
+	background-color: transparent;
+	outline: none!important;
+
+	&:hover{
+	  border: 1px solid $color-stack;
+	  transition: 1.5s all;
+	  color: $color-base;
+	}
+  }
+  .btn_submit{
+	margin-top: 50px;
+  }
+}
